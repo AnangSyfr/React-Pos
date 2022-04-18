@@ -34,7 +34,7 @@ const ListMenu = () => {
     useEffect(() => {
         const getProducts = async () => {
             let response = await axios.get(
-                "http://zulatech.digital/demo/pos/api/product"
+                "https://open-minded.my.id/pos/api/product"
             );
             if (response.status === 200) {
                 setProducts(response.data.data);

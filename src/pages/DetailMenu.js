@@ -29,7 +29,7 @@ const DetailMenu = () => {
     useEffect(() => {
         const getProducts = async () => {
             let response = await axios.get(
-                `http://zulatech.digital/demo/pos/api/product/${id}`
+                `https://open-minded.my.id/pos/api/product/${id}`
             );
             if (response.status === 200) {
                 setProduct(response.data.data);
